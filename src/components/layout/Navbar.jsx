@@ -7,11 +7,12 @@ const Navbar = () => {
                 <div className='w-auto flex justify-start items-center grow'>
                     <h1 className='text-slate-100 text-[1.1em] font-semibold'>Home</h1>
                 </div>
-                <div className='w-[60%] min-w-[450px] flex justify-between items-center gap-6 [&>li>a]:text-slate-100 text-[1.05em] font-semibold cursor-pointer'>
-                    <ul className=' flex gap-8 justify-between items-center'>
+                <div className='w-[60%] min-w-[450px] flex justify-between items-center gap-6 [&>li>a]:text-slate-100 text-[1.05em] font-semibold cursor-pointer [&>li>a]:hover:text-blue-500'>
+                    <ul className=' flex gap-10 justify-between items-center'>
                         <li><a href='#hero' >Services</a></li>
                         <li><a href='#about' >About</a></li>
                         <li><a href='#skills' >Skills</a></li>
+                        <li><a href='#projects' >Projects</a></li>
                         <li><a href='#projects' >Projects</a></li>
                         <li><a href='#projects' >Projects</a></li>
                     </ul>
