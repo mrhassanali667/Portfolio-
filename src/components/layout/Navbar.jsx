@@ -2,9 +2,40 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className='h-[70px] w-full bg-gray-50/5 flex gap-3 absolute items-center px-3'>
-            <img className='h-10' src="/images/icon.png" alt="" />
-            <a href='#hero' className='text-white text-[1.7em] font-semibold  cursor-pointer'>Home</a>
+        <div className='h-[75px] w-full flex justify-center gap-3 absolute items-center  text-slate-100'>
+            <div className=' max-w-[1300px] w-[90%] flex items-center'>
+                <div className='w-auto flex justify-start items-center grow'>
+                    <h1 className='text-slate-100 text-[1.1em] font-semibold'>Home</h1>
+                </div>
+                <div className='w-[60%] min-w-[450px] flex justify-between items-center gap-6 [&>li>a]:text-slate-100 text-[1.05em] font-semibold cursor-pointer'>
+                    <ul className=' flex gap-8 justify-between items-center'>
+                        <li><a href='#hero' >Services</a></li>
+                        <li><a href='#about' >About</a></li>
+                        <li><a href='#skills' >Skills</a></li>
+                        <li><a href='#projects' >Projects</a></li>
+                        <li><a href='#projects' >Projects</a></li>
+                    </ul>
+                    <span>
+                        <svg
+                            className="w-5 h-5 text-slate-100"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeWidth={2}
+                                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                            />
+                        </svg>
+
+                    </span>
+                </div>
+            </div>
         </div>
     )
 }
